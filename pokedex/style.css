@@ -1,0 +1,202 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+select {
+	width: 100px;
+	height: 40px;
+	background-color: #DEF3FD;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	cursor: pointer;
+	height: 80%;
+}
+
+.card::after {
+	content: "";
+	display: block;
+	width: 50%;
+	height: 45%;
+	border-radius: 100%;
+	background-color: #F5F5F5;
+	position: absolute;
+	top: 15%;
+	left: 25%;
+}
+
+.steel {
+	background-color: #808080;
+}
+
+.ghost {
+	background-color: #b366ff;
+}
+
+.dark {
+	background-color: #000;
+}
+
+.fire {
+	background-color: #ff944d;
+}
+
+.grass {
+	background-color: #99CC00;
+}
+
+.electric {
+	background-color: #FFFF00;
+}
+
+.water {
+	background-color: #33ADFF;
+}
+
+.ice {
+	background-color: #CCEEFF;
+}
+
+.fairy p, .ground p, .normal p, .steel p, .electric p, .flying p, .grass p, .ice p {
+	color: #000;
+}
+
+.fairy, .ground, .normal,  .steel, .electric, .flying, .grass, .ice {
+	color: #000;
+}
+
+.bug p, .dragon p, .fire p, .ghost p, .psychic p, .dark p, .fighting p, .poison p, .rock p, .water p {
+	color: #FFF;
+}
+
+.bug, .dragon, .fire, .ghost, .psychic, .dark, .fighting, .poison, .rock, .water {
+	color: #FFF;
+}
+
+.ground {
+	background-image: linear-gradient(to bottom, #ffff80 50%, #cccc00 50%);
+}
+
+.rock {
+	background-color: #808000;
+}
+
+.fairy {
+	background-color: #ffe6ff;
+}
+
+.poison {
+	background-color: #ff80df;
+}
+
+.bug {
+	background-color: #29a329;
+}
+
+.bug p {
+	color: #FFF;
+}
+
+.dragon {
+	background-image: linear-gradient(to bottom, #00ace6 50%, #FF6600 50%);
+}
+
+.psychic {
+	background-color: #FF99DD;
+}
+
+.flying {
+	background-image: linear-gradient(to bottom, #99CCFF 50%, #CCCCCC 50%);
+}
+
+.fighting {
+	background-color: #FF6600;
+}
+
+.normal {
+	background-color: #FFF;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(139, 139, 139);
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+		transform: translateY(-6px);
+	}
+	40% {
+		transform: translateY(0px);
+	}
+	80% {
+		transform: translateY(-2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
