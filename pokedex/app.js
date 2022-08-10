@@ -3,7 +3,7 @@ async function fetchPokemon() {
     const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`;
     const pokemonPromises = [];
 
-    for (let i = 1; i <= 893; i++) {
+    for (let i = 1; i <= 905; i++) {
         pokemonPromises.push(fetch(getPokemonUrl(i)).then(response => response.json()));
     }
 
